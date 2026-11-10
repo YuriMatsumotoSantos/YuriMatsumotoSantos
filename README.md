@@ -1,5 +1,6 @@
 # Yuri Matsumoto
-n[English version below](#english)
+
+[English version below](#english)
 
 Estudante de Engenharia de Computação na UTFPR, em Pato Branco (PR). Trabalho com modelos de linguagem: ajuste fino, avaliação e o software em volta deles.
 
