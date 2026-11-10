@@ -1,4 +1,5 @@
 # Yuri Matsumoto
+n[English version below](#english)
 
 Estudante de Engenharia de Computação na UTFPR, em Pato Branco (PR). Trabalho com modelos de linguagem: ajuste fino, avaliação e o software em volta deles.
 
@@ -18,12 +19,44 @@ Estudante de Engenharia de Computação na UTFPR, em Pato Branco (PR). Trabalho 
 - [enem-essay-classifier](https://github.com/YuriMatsumotoSantos/enem-essay-classifier): mais de 15 algoritmos de classificação sobre 4.570 redações, de TF-IDF a embeddings do BERTimbau.
 - [ProjetoIntegrador-DevOps](https://github.com/YuriMatsumotoSantos/ProjetoIntegrador-DevOps): aplicação Flask com métricas no Prometheus, Docker e CI.
 - [sistemas-embarcados-freertos](https://github.com/YuriMatsumotoSantos/sistemas-embarcados-freertos) e [conversor-buck-controle-digital](https://github.com/YuriMatsumotoSantos/conversor-buck-controle-digital): tempo real e controle digital em STM32.
-- Plataforma de estudos para o ENEM, em Next.js e TypeScript, com um pipeline que extrai e classifica questões de prova usando LLM. Em desenvolvimento.
+- [plataforma-enem](https://github.com/YuriMatsumotoSantos/plataforma-enem): plataforma de estudos para o ENEM, em Next.js e TypeScript, com um pipeline que extrai e classifica questões de prova usando LLM. Em desenvolvimento.
 
 ## Ferramentas
 
 Python, Hugging Face Transformers, PEFT, TRL, vLLM, scikit-learn, TypeScript, Next.js, PostgreSQL, Docker, C para microcontroladores.
 
 ## Contato
+
+[LinkedIn](https://www.linkedin.com/in/yuri-matsumoto-693138245/)
+
+---
+
+## English
+
+Computer Engineering student at UTFPR, in Pato Branco, Brazil. I work with language models: fine-tuning, evaluation and the software around them.
+
+### What I am working on
+
+**Undergraduate research: automated scoring of ENEM essays with LLMs.** Fine-tuning with LoRA, evaluation on essay prompts the model never saw in training, and formative feedback for the student. Code, data and the dated log of every experiment are in [IC-Redacoes-UTFPR/CorrecaoRedacao](https://github.com/IC-Redacoes-UTFPR/CorrecaoRedacao).
+
+- QWK 0.78 on the official split of the essay-br corpus, where the best published result is 0.79.
+- On unseen prompts the same model drops to 0.66. I did not find this test published for essay-br.
+- The fine-tuned model used only 2 of the 6 possible scores per competency. Replacing the most likely score with the probability-weighted mean raised QWK from 0.44 to 0.52.
+- Four LoRA adapters (Qwen 2.5, Llama 3.1, Mistral and Gemma 2) published at [huggingface.co/YurinhoMatsumoto](https://huggingface.co/YurinhoMatsumoto).
+
+**Final thesis: RAG for case law search at STJ, Brazil's Superior Court of Justice.** A prototype that compares three retrieval strategies over tax crime rulings: sparse (BM25), dense (embeddings) and hybrid (RRF fusion). In progress.
+
+### Other projects
+
+- [plataforma-enem](https://github.com/YuriMatsumotoSantos/plataforma-enem): ENEM study platform in Next.js and TypeScript, with a pipeline that extracts and classifies exam questions using an LLM. In development.
+- [enem-essay-classifier](https://github.com/YuriMatsumotoSantos/enem-essay-classifier): more than 15 classification algorithms over 4,570 essays, from TF-IDF to BERTimbau embeddings.
+- [ProjetoIntegrador-DevOps](https://github.com/YuriMatsumotoSantos/ProjetoIntegrador-DevOps): Flask application with Prometheus metrics, Docker and CI.
+- [sistemas-embarcados-freertos](https://github.com/YuriMatsumotoSantos/sistemas-embarcados-freertos) and [conversor-buck-controle-digital](https://github.com/YuriMatsumotoSantos/conversor-buck-controle-digital): real time and digital control on STM32.
+
+### Tools
+
+Python, Hugging Face Transformers, PEFT, TRL, vLLM, scikit-learn, TypeScript, Next.js, PostgreSQL, Docker, C for microcontrollers.
+
+### Contact
 
 [LinkedIn](https://www.linkedin.com/in/yuri-matsumoto-693138245/)
